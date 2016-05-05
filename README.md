@@ -9,13 +9,9 @@ yet. This will change soon.
 
 ## How to run
 
+Add [lingeling](http://fmv.jku.at/lingeling/) to your path, then:
+
 ```
 npm install -g sentient-lang
-sentient hamming8.snt
-```
-
-If [lingeling](http://fmv.jku.at/lingeling/) is on your path, this will be faster:
-
-```
-sentient -a lingeling hamming8.snt
+sentient hamming8.snt -a lingeling
 ```
