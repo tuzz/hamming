@@ -1,0 +1,17 @@
+function hamming_distance (left, right) {
+  distance = 0;
+
+  left.each(function^ (l, index) {
+    distance += if(l != right[index], 1, 0);
+  });
+
+  return distance;
+};
+
+array8<array6<bool>> strings;
+
+strings.eachPair(function (left, right) {
+  invariant hamming_distance(left, right) >= 3;
+});
+
+vary strings;
